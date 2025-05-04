@@ -1,0 +1,1 @@
+d={'name':'Harsh', 'age':37,'Qualification':'M.tech'}
