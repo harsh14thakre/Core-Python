@@ -1,0 +1,1 @@
+print(s2.difference(s1))
