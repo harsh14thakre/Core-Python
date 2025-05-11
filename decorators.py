@@ -21,3 +21,27 @@
 # x()
 
             ###############################
+
+# def decor(z):
+#     def inner(x,y):
+#         print(x+y)
+#         print(z)
+#     return inner
+# x=decor(10)
+# p=int(input("Enter the number :"))
+# q=int(input("Enter the number :"))
+# x(p,q)
+
+################################################
+def Outerfun(n):
+    def innerfun(x,y):
+        x=x*2
+        y=y+10
+        n(x,y)
+    return innerfun
+@Outerfun
+def Mainfun(p,q):
+    print(p+q)
+a=int(input("Enter the number :"))
+b=int(input("Enter the number :"))
+Mainfun(a,b)
