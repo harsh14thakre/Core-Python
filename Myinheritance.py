@@ -110,18 +110,47 @@
         #   child
 
 
-class A:
-    def first(self):
+# class A:
+#     def first(self):
+#         print("From parent class")
+
+# class B(A):
+#     def second(self):
+#         print("From child class")
+
+# class C(A,B):   
+#     pass     
+
+# obj=C()
+# obj.first()
+# obj.second()
+
+
+'''
+4.  Hierarchical inheritance 
+
+                                -Parent 
+                            |       
+'''
+
+
+class Parent:
+    def home(self):
         print("From parent class")
 
-class B(A):
-    def second(self):
-        print("From child class")
+    def bank(self):
+        print("From parent bank")    
+class child1(Parent):
+    pass    
+class child2(Parent):
+    pass 
 
-class C(A,B):   
-    pass     
+obj1=child1()
+obj2=child2()
 
-obj=C()
-obj.first()
-obj.second()
+obj1.home()
+obj2.home()
+obj1.bank()
+obj2.bank()
+
        
