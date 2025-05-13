@@ -154,3 +154,28 @@ obj1.bank()
 obj2.bank()
 
        
+'''
+5. Hybrid
+'''       
+
+
+class Grandparent:
+    def home(self):
+        print("From parent class")
+    def bank(self):
+        print("From parent bank")  
+
+class Parent1(Grandparent):
+    def car(self):
+        print("Car from parent 1")   
+class Parent2(Grandparent):
+    def home2(self):
+        print("Home 2 from parent 2")       
+class Child(Parent1,Parent2):    ## depth first   MRO (Method resolution order)
+    pass
+
+obj=Child()
+obj.car()
+obj.home2()
+obj.home()
+obj.bank()
